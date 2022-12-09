@@ -3,6 +3,10 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class GameMain extends JPanel implements MouseListener {
+
+	// Fixes warning - Eclipse suggested solution
+	private static final long serialVersionUID = 1L;
+
 	// Constants for game
 	// Number of ROWS by COLS cell constants
 	public static final int ROWS = 3;
