@@ -30,14 +30,15 @@ public class GameMain extends JPanel implements MouseListener {
 	// The game board
 	private Board board;
 
-	// COMPLETE: create the enumeration for the variable below (GameState currentState)
-	
+	// COMPLETE: create the enumeration for the variable below (GameState
+	// currentState)
+
 	// The game's current state
 	private GameState currentState;
 
 	// The current player
 	private Player currentPlayer;
-	
+
 	// For displaying game status message
 	private JLabel statusBar;
 
@@ -46,8 +47,11 @@ public class GameMain extends JPanel implements MouseListener {
 	 */
 	public GameMain() {
 
-		// TODO: This JPanel fires a MouseEvent on MouseClicked so add required event
-		// listener to 'this'.
+		// COMPLETE: This JPanel fires a MouseEvent on MouseClicked so add required
+		// event listener to 'this'.
+
+		// Listen for users' mouse interactions/events
+		addMouseListener(this);
 
 		// Setup the status bar (JLabel) to display status message
 		statusBar = new JLabel("         ");
