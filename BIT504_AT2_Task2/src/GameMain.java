@@ -63,11 +63,14 @@ public class GameMain extends JPanel implements MouseListener {
 		// Layout of the panel is in border layout
 		setLayout(new BorderLayout());
 		add(statusBar, BorderLayout.SOUTH);
+		
 		// Account for statusBar height in overall height
 		setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT + 30));
 
-		// TODO: Create a new instance of the game "Board"class. HINT check the
-		// variables above for the correct name
+		// COMPLETE: Create a new instance of the game "Board" class.
+		
+		// Assign a new Board instance to the board variable
+		board = new Board();
 
 		// TODO: call the method to initialise the game board
 
