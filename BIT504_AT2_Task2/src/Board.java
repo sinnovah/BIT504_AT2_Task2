@@ -36,7 +36,9 @@ public class Board {
 		// is not a draw.
 		// Hint: Return false if it is not a draw, return true if there are no empty
 		// positions left
-
+		
+		// Temporarily return true for compilation
+		return true;
 	}
 
 	/**
