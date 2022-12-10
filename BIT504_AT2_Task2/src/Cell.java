@@ -15,7 +15,11 @@ public class Cell {
 	 */
 	public Cell(int row, int col) {
 
-		// TODO: Initialise the variables row, col
+		// COMPLETE: Initialise the variables row, col
+		
+		// Variable initialisation for row and col
+		this.row = row;
+		this.col = col;
 
 		// COMPLETE: Call the method that sets the cell content to EMPTY
 		
