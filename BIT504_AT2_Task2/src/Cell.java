@@ -50,7 +50,10 @@ public class Cell {
 	 */
 	public void clear() {
 
-		// TODO: Set the value of content to Empty (Remember this is an enum)
+		// COMPLETE: Set the value of content to Empty (Remember this is an enum)
+		
+		// Set the content of this Cell to empty
+		this.content = Player.Empty;
 
 	}
 
