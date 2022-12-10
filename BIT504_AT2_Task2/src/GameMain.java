@@ -90,9 +90,17 @@ public class GameMain extends JPanel implements MouseListener {
 				// Create a main window to contain the panel
 				JFrame frame = new JFrame(TITLE);
 
-				// TODO: create the new GameMain panel and add it to the frame
+				// COMPLETE: Create the new GameMain panel and add it to the frame
+				
+				// Add a new GameMain panel to the frame
+				frame.add(new GameMain());
 
-				// TODO: set the default close operation of the frame to exit_on_close
+				// COMPLETE: set the default close operation of the frame to exit_on_close
+				// (Jakhotia, n.d.) - Article used to find the correct code
+				// https://www.codespeedy.com/how-to-exit-jframe-on-close-in-java-swing/
+				
+				// Exit the JFrame when the user clicks close
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 				frame.pack();
 				frame.setLocationRelativeTo(null);
@@ -104,10 +112,13 @@ public class GameMain extends JPanel implements MouseListener {
 	/**
 	 * Custom painting codes on this JPanel
 	 */
+	@Override
 	public void paintComponent(Graphics g) {
+		
 		// Fill background and set colour to white
 		super.paintComponent(g);
 		setBackground(Color.WHITE);
+		
 		// Ask the game board to paint itself
 		board.paint(g);
 
@@ -116,11 +127,17 @@ public class GameMain extends JPanel implements MouseListener {
 			statusBar.setForeground(Color.BLACK);
 			if (currentPlayer == Player.Cross) {
 
-				// TODO: use the status bar to display the message "X"'s Turn
+				// COMPLETE: Use the status bar to display the message "X"'s Turn
+				
+				// Display "X"'s Turn in the status bar
+				statusBar.setText("\"X\"'s Turn");
 
 			} else {
 
-				// TODO: use the status bar to display the message "O"'s Turn
+				// COMPLETE: Use the status bar to display the message "O"'s Turn
+				
+				// Display "O"'s Turn in the status bar
+				statusBar.setText("\"O\"'s Turn");
 
 			}
 		} else if (currentState == GameState.Draw) {
@@ -213,8 +230,10 @@ public class GameMain extends JPanel implements MouseListener {
 			initGame();
 		}
 
-		// TODO: redraw the graphics on the UI
+		// COMPLETE: Redraw the graphics on the UI
 
+		// Repaint the UI's graphic's
+		repaint();
 	}
 
 	@Override
