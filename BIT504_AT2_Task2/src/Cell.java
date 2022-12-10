@@ -17,8 +17,10 @@ public class Cell {
 
 		// TODO: Initialise the variables row, col
 
-		// TODO: call the method that sets the cell content to EMPTY
-
+		// COMPLETE: Call the method that sets the cell content to EMPTY
+		
+		// Set this cell's content to empty by calling the clear() method
+		this.clear();
 	}
 
 	/**
