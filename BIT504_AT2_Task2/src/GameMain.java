@@ -112,6 +112,7 @@ public class GameMain extends JPanel implements MouseListener {
 	/**
 	 * Custom painting codes on this JPanel
 	 */
+	@Override
 	public void paintComponent(Graphics g) {
 		
 		// Fill background and set colour to white
@@ -229,8 +230,10 @@ public class GameMain extends JPanel implements MouseListener {
 			initGame();
 		}
 
-		// TODO: redraw the graphics on the UI
+		// COMPLETE: Redraw the graphics on the UI
 
+		// Repaint the UI's graphic's
+		repaint();
 	}
 
 	@Override
