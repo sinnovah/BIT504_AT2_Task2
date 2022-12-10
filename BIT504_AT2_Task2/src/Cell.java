@@ -15,10 +15,16 @@ public class Cell {
 	 */
 	public Cell(int row, int col) {
 
-		// TODO: Initialise the variables row, col
+		// COMPLETE: Initialise the variables row, col
+		
+		// Variable initialisation for row and col
+		this.row = row;
+		this.col = col;
 
-		// TODO: call the method that sets the cell content to EMPTY
-
+		// COMPLETE: Call the method that sets the cell content to EMPTY
+		
+		// Set this cell's content to empty by calling the clear() method
+		this.clear();
 	}
 
 	/**
@@ -50,7 +56,10 @@ public class Cell {
 	 */
 	public void clear() {
 
-		// TODO: Set the value of content to Empty (Remember this is an enum)
+		// COMPLETE: Set the value of content to Empty (Remember this is an enum)
+		
+		// Set the content of this Cell to empty
+		this.content = Player.Empty;
 
 	}
 

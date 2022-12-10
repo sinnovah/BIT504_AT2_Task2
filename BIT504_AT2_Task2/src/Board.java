@@ -16,7 +16,10 @@ public class Board {
 	 */
 	public Board() {
 
-		// TODO: initialise the cells array using ROWS and COLS constants
+		// COMPLETE: Initialise the cells array using ROWS and COLS constants
+		
+		// Use the ROWS and COLS constants from GameMain to initialise the cells 2D array
+		cells = new Cell[GameMain.ROWS][GameMain.COLS];
 
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
