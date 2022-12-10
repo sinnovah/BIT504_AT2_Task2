@@ -87,11 +87,25 @@ public class Board {
 			return true;
 		}
 
-		// 3-in-the-diagonal
-		if (cells[0][0].content == thePlayer && cells[1][1].content == thePlayer && cells[2][2].content == thePlayer)
+		// Check if player has 3-in-the-diagonal top left to bottom right
+		if (cells[0][0].content == thePlayer 
+				&& cells[1][1].content == thePlayer 
+				&& cells[2][2].content == thePlayer) {
+			
+			// Return true - the player has completed a diagonal
 			return true;
-
-		// TODO: Check the diagonal in the other direction
+		}
+			
+		// COMPLETE: Check the diagonal in the other direction
+		
+		// Check if player has 3-in-the-diagonal top right to bottom left
+		if (cells[0][2].content == thePlayer 
+				&& cells[1][1].content == thePlayer 
+				&& cells[2][0].content == thePlayer) {
+			
+			// Return true - the player has completed a diagonal
+			return true;
+		}
 
 		// No winner, keep playing
 		return false;
