@@ -113,9 +113,11 @@ public class GameMain extends JPanel implements MouseListener {
 	 * Custom painting codes on this JPanel
 	 */
 	public void paintComponent(Graphics g) {
+		
 		// Fill background and set colour to white
 		super.paintComponent(g);
 		setBackground(Color.WHITE);
+		
 		// Ask the game board to paint itself
 		board.paint(g);
 
@@ -124,7 +126,10 @@ public class GameMain extends JPanel implements MouseListener {
 			statusBar.setForeground(Color.BLACK);
 			if (currentPlayer == Player.Cross) {
 
-				// TODO: use the status bar to display the message "X"'s Turn
+				// COMPLETE: Use the status bar to display the message "X"'s Turn
+				
+				// Display "X"'s Turn in the status bar
+				statusBar.setText("\"X\"'s Turn");
 
 			} else {
 
