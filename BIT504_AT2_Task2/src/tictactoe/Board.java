@@ -1,12 +1,14 @@
-package tictactoe;
-import java.awt.Color;
-import java.awt.Graphics;
-
 /**
  * Board class - handles the Tic-Tac-Toe game board
  * 
  * @author Open Polytechnic, TODOs completed by Sinnovah White
  */
+
+package tictactoe;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
 public class Board {
 
 	// Grid line width

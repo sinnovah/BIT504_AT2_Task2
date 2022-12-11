@@ -1,14 +1,16 @@
+/**
+ * GameMain class - handles the game logic. Extends JPanel class to inherit all
+ * of its methods. Implements MouseListener to listen for users' mouse events. Contains main().
+ * 
+ * @author Open Polytechnic, TODOs completed by Sinnovah White
+ */
+
 package tictactoe;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-/**
- * GameMain class - handles the game logic. Extends JPanel class to inherit all
- * of its methods. Implements MouseListener to listen for users' mouse events.
- * 
- * @author Open Polytechnic, TODOs completed by Sinnovah White
- */
 public class GameMain extends JPanel implements MouseListener {
 
 	// Constants for the game...

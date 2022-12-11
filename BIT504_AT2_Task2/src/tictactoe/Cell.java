@@ -1,14 +1,16 @@
-package tictactoe;
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-
 /**
  * Cell class - handles each cell on the game board
  * 
  * @author Open Polytechnic, TODOs completed by Sinnovah White
  */
+
+package tictactoe;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
 public class Cell {
 
 	// Content of this cell (empty, cross, or nought)
