@@ -1,3 +1,4 @@
+package tictactoe;
 /**
  * Enumeration for the game's state. Playing by default, Cross_won when X wins,
  * Nought_won when O wins, and Draw for a game draw.
